@@ -19,18 +19,7 @@
             
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
-
-            <label for="genero">Género:</label>
-            <select id="genero" name="genero" required>
-                <option value="">Selecciona tu género</option>
-                <option value="Masculino">Masculino</option>
-                <option value="Femenino">Femenino</option>
-                <option value="Otro">Otro</option>
-            </select>
             
-            <label for="foto">Foto de perfil:</label>
-            <input type="file" id="foto" name="foto" accept="image/*" required>
-
             <button type="submit">Enviar</button>
         </form>
     </div>
