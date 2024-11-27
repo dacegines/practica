@@ -18,6 +18,10 @@
             
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
             
             <button type="submit">Enviar</button>
         </form>

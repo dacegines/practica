@@ -5,6 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = htmlspecialchars($_POST["nombre"]);
     $edad = intval($_POST["edad"]);
     $email = htmlspecialchars($_POST["email"]);
+    $telefono = htmlspecialchars($_POST["telefono"]);
 
     // Validación básica
     if (!empty($nombre) && $edad > 0 && filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -12,9 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<p><strong>Nombre:</strong> $nombre</p>";
         echo "<p><strong>Edad:</strong> $edad años</p>";
         echo "<p><strong>Correo Electrónico:</strong> $email</p>";
+        echo "<p><strong>Teléfono:</strong> $telefono</p>";
     } else {
         echo "<h1>Error: Datos inválidos</h1>";
         echo "<p>Por favor revisa los datos ingresados e intenta de nuevo.</p>";
+        
     }
 } else {
     echo "<h1>Acceso Denegado</h1>";
