@@ -57,3 +57,11 @@ form select {
     border-radius: 4px;
     background-color: white;
 }
+
+form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

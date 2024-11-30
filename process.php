@@ -12,6 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $genero = htmlspecialchars($_POST["genero"]);
 
+    $fecha_nacimiento = htmlspecialchars($_POST["fecha_nacimiento"]);
+
+
+    if (!empty($nombre) && $edad > 0 && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($fecha_nacimiento)) {
+        echo "<p><strong>Fecha de Nacimiento:</strong> $fecha_nacimiento</p>";
+    }
+
 if (!empty($nombre) && $edad > 0 && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($genero)) {
     echo "<h1>Gracias por enviar tus datos</h1>";
     echo "<p><strong>Nombre:</strong> $nombre</p>";
