@@ -21,6 +21,15 @@
 
             <label for="telefono">Teléfono:</label>
             <input type="tel" id="telefono" name="telefono" required>
+            
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Seleccione...</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+
 
             
             <button type="submit">Enviar</button>
